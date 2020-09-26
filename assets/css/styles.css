@@ -1,0 +1,15 @@
+.shadow-inset:hover {
+  box-shadow: inset 0px 0px 8px 0px;
+}
+
+.shadow-inset {
+  box-shadow: inset 0px 0px 0px 0px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#projects-container {
+  background-color: inherit;
+  position: relative;
+  transform: translateY(-90px);
+}
+
