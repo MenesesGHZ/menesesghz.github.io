@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>MyWebPage</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/css/Animated-Type-Heading.css">
+    <link rel="stylesheet" href="assets/css/card-3-column-animation-shadows-images.css">
+    <link rel="stylesheet" href="assets/css/dh-row-titile-text-image-right-1.css">
     <link rel="stylesheet" href="assets/css/Footer-Basic.css">
     <link rel="stylesheet" href="assets/css/Footer-Clean.css">
     <link rel="stylesheet" href="assets/css/Projects-Horizontal.css">
@@ -20,22 +27,28 @@
         <div id="particles-js" style="background-color: #91e5ff;position: absolute;width: 100%;height: 100%;"></div>
         <div class="container h-100">
             <div class="row h-100 align-items-center">
-                <div class="col">
-                    <h1 style="text-align: center;">MenesesGHZ</h1>
-                    <p style="text-align: center;">about me</p>
-                </div>
+                <div class="col">				<div class="caption v-middle text-center">
+					<h1 class="cd-headline clip">
+			            <span class="blc">I'm | </span>
+			            <span class="cd-words-wrapper">
+			              <b class="is-visible">MenesesGHZ.</b>
+			              <b>Developer.</b>
+			              <b>Creative.</b>
+			            </span>
+	          		</h1>
+				</div></div>
             </div>
         </div>
     </header>
     <div class="projects-horizontal">
-        <div class="container" id="projects-container" style="box-shadow: 0px 1px 3px 0px;">
+        <div class="container projects-container main-view" id="projects-container">
             <div class="intro">
                 <h2 class="text-center">My Projects</h2>
                 <p class="text-center">These are my main projects that I myself have been develop during my timeline as a programmer. I suggest to check them out and have some fun :)</p>
             </div>
             <div class="row projects">
                 <div class="col-sm-6 item">
-                    <div class="row py-3 shadow-inset">
+                    <div class="row py-3 project-card" id="snake3d-trigger">
                         <div class="col-md-12 col-lg-5 d-flex align-items-center"><a href="#"><img class="img-fluid" src="assets/img/snake_3d.gif"></a></div>
                         <div class="col">
                             <h3 class="name">Snake 3D - Reinforcement Learning</h3>
@@ -44,16 +57,16 @@
                     </div>
                 </div>
                 <div class="col-sm-6 item">
-                    <div class="row py-3 shadow-inset">
+                    <div class="row py-3 project-card" id="poem-maker-trigger">
                         <div class="col-md-12 col-lg-5 d-flex align-items-center"><a href="#"><img class="img-fluid" src="assets/img/lstm_1.png"></a></div>
                         <div class="col">
-                            <h3 class="name">Stephen King LSTM</h3>
+                            <h3 class="name">Poem Maker with LSTM</h3>
                             <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 item">
-                    <div class="row py-3 shadow-inset">
+                    <div class="row py-3 project-card" id="mnist-trigger">
                         <div class="col-md-12 col-lg-5 d-flex align-items-center"><a href="#"><img class="img-fluid" src="assets/img/mnist.gif"></a></div>
                         <div class="col">
                             <h3 class="name">MNIST with Artificial Neruronal Network</h3>
@@ -62,7 +75,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6 item">
-                    <div class="row py-3 shadow-inset">
+                    <div class="row py-3 project-card" id="safe-alert-trigger">
                         <div class="col-md-12 col-lg-5 d-flex align-items-center"><a href="#"><img class="img-fluid" src="assets/img/safe_alert.png"></a></div>
                         <div class="col">
                             <h3 class="name">Safe Alert</h3>
@@ -72,15 +85,79 @@
                 </div>
             </div>
         </div>
+        <div class="container projects-container main-view main-view-hidden" id="snake3d">
+            <div class="row w-100 mt-4" style="position: absolute;">
+                <div class="col col-12 d-flex justify-content-end"><i class="la la-arrow-circle-o-right mt-5 mr-0 mt-md-4 mr-md-4 mr-lg-5 go-back-button" id="snake3d-exit"></i></div>
+            </div>
+            <div class="intro">
+                <h2 class="text-center m-0" style="font-family: 'Noto Serif', serif;font-style: normal;font-weight: normal;font-size: 37px;">Snake 3D - Reinforcement Learning</h2>
+            </div>
+            <div class="row projects">
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 item d-flex justify-content-center align-items-center"><img class="img-fluid" src="assets/img/snake_3d.gif"></div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 item">
+                    <section>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <h5 style="font-family: 'Source Sans Pro', sans-serif;font-weight: normal;font-size: 17px;font-style: italic;">Description:</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p></p>
+                                    <p style="color: rgb(59,62,64);font-family: 'Noto Serif', serif;">The project itself consists in the recreation of the classic video-game "<strong>The Snake" into a 3D&nbsp;scenarium</strong>. Implementing the computer graphics with the support of&nbsp; <strong>Three.js</strong> library,
+                                        developing the mechanics of the 3D environment from scratch. More over the project has the implementation of a reinforcement learning algorithm, using the Monte Carlo Methods theory describe by <strong>S. Sutton and G. Barto</strong>                                        in their book <strong>"Reinforcement&nbsp;Learning an Introduction"</strong>. Specifically the project has the algorithmic implementation of <strong>Monte Carlo Exploring Starts.</strong>&nbsp;In general, this method
+                                        seeks to find the best action to take in a certain state, mapping a certain action, which is going to maximize the reward in a long term, with a respective state.</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col col-12">
+                    <section>
+                        <div class="container">
+                            <div class="row p-0 p-md-0 p-lg-5 p-xl-5 align-items-center">
+                                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 my-2 my-sm-2 my-md-0 my-lg-0" style="position: relative;color: #292424;">
+                                    <div class="container d-flex justify-content-center">
+                                        <div class="d-flex justify-content-around align-items-center px-2 project-tag"><i class="fab fa-js-square mr-2" style="background: #ffc700;"></i>
+                                            <p class="mb-0">Javascript</p>
+                                        </div>
+                                        <div class="d-flex justify-content-around align-items-center px-2 project-tag"><i class="fas fa-gamepad mr-2" style="color: rgb(169,5,5);"></i>
+                                            <p class="mb-0">Minigame</p>
+                                        </div>
+                                    </div>
+                                    <div class="container d-flex justify-content-center mt-3">
+                                        <div class="d-flex justify-content-around align-items-center px-2 project-tag"><i class="fas fa-robot mr-2" style="color: rgb(0,160,195);"></i>
+                                            <p class="mb-0">Reinforcement Learning</p>
+                                        </div>
+                                        <div class="d-flex justify-content-around align-items-center px-2 project-tag"><i class="fas fa-cubes mr-2" style="color: rgb(14,177,0);"></i>
+                                            <p class="mb-0">3D</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 my-2 my-sm-2 my-md-0 my-lg-0"><a class="d-flex justify-content-center align-items-center btn btn-primary" style="width: 100%;height: 80px;background: rgb(0,0,0);color: rgb(255,255,255);font-size: 26px;text-align: center;box-shadow: 0px 3px 13px rgba(0,0,0,0.27);margin-bottom: 10px;">See it on Github<i class="fab fa-github pl-4"></i></a>
+                                    <a
+                                        class="d-flex justify-content-center align-items-center btn btn-primary" href="Snake3D-JS" style="width: 100%;height: 80px;background: rgb(255,172,48);color: rgb(0,0,0);font-size: 26px;text-align: center;box-shadow: 0px 3px 13px rgba(0,0,0,0.27);">Check it Out<i class="icon-arrow-right-circle pl-4"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="footer-basic" style="transform: translateY(-40px);">
         <footer>
-            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-linkedin"></i></a><a href="#"><i class="icon ion-social-github"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-            <p class="copyright">by MenesesGHZ</p>
+            <div class="social"><a href="www.linkedin.com/in/antonio-hernández-232a201b9"><i class="icon ion-social-linkedin" style="color: rgb(27,135,242);"></i></a><a href="https://github.com/MenesesGHZ"><i class="icon ion-social-github" style="color: rgb(27,135,242);"></i></a></div>
+            <p
+                class="copyright">by MenesesGHZ</p>
         </footer>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Animated-Type-Heading.js"></script>
+    <script src="assets/js/change_view.js"></script>
     <script src="assets/js/etc/etc.js"></script>
     <script src="assets/js/etc/particles.js"></script>
     <script src="assets/js/Swipe-Slider-7.js"></script>
