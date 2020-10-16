@@ -39,3 +39,25 @@
   display: none;
 }
 
+opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.card-title {
+  font-family: 'Noto Serif', serif;
+}
+
+.project-card-title {
+  font-family: 'Noto Serif', serif;
+}
+
+.project-card-brief-description {
+  color: rgb(62,59,59)!important;
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+}
+
