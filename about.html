@@ -1,0 +1,20 @@
+---
+layout: default
+title: About Me
+---
+<div class="container projects-container main-view">
+	<div class="row projects pt-5 px-0 px-sm-0 px-md-1 px-lg-5 px-lg-5">
+		<div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-3 mb-sm-3 mb-md-3 mb-lg-0 mb-xl-0">
+			<p>I am</p>
+			<h1>{{site.data.about_me.name}}</h1>
+			<p>{{site.data.about_me.state}}</p>
+		</div>
+		<div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex align-items-center p-0 m-0">
+			<p>{{site.data.about_me.about}}</p>
+		</div>
+		<div class="col d-flex justify-content-center mt-2"><a href="{{site.data.about_me.cv}}" class="btn btn-primary" type="button" style="width: 250px;" download>Download CV</a></div>
+		<div class="col col-12">
+			<p class="p-0 m-0 text-center" style="font-size: 13px;font-style: italic;font-family: 'Source Sans Pro', sans-serif;">Last Date Updated: {{site.data.about_me.last_update | date: "%b %d, %Y" }}</p>
+		</div>
+	</div>
+</div>
