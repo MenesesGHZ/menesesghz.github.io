@@ -1,23 +1,22 @@
-
 <div class="container projects-container main-view" id="projects-container">
-    <div class="intro">
-        <h2 class="text-center" style="font-family: 'Noto Serif', serif;font-size: 35px;">My Projects</h2>
-        <p class="text-center" style="color: rgb(1,115,184);font-family: 'Source Sans Pro', sans-serif;font-size: 18px;">These are my <strong>main</strong> projects that I myself have been develop during my timeline as a programmer. I suggest to check them out and have some fun :)</p>
-    </div>
-    <div class="row projects">
-    {% for post in site.posts %}
-            <div class="col-6 item">
-                <div class="row py-3 project-card" id="{{post.ID}}-trigger">
-                    <div class="col-md-12 col-lg-5 d-flex align-items-center"><a href="#"><img class="img-fluid" src="{{post.img_src}}"></a>
-                    </div>
-                    <div class="col">
-                        <h3 class="name project-card-title">{{post.name}}</h3>
-                        <p class="description project-card-brief-description">{{post.description | truncate: 250}}</p>
-                    </div>
-                </div>
-            </div>
-    {% endfor %}
-    </div>
+	<div class="intro">
+		<h2 class="text-center" style="font-family: 'Noto Serif', serif;font-size: 35px;">My Projects</h2>
+		<p class="text-center text-secondary" style="font-family: 'Source Sans Pro', sans-serif;font-size: 15px;">These are my <strong>main</strong> projects that I myself have been develop during my timeline as a programmer. I suggest to check them out and have some fun :)</p>
+	</div>
+	<div class="row projects">
+		{% for post in site.posts %}
+		<div class="col-6 item">
+			<div class="row py-3 project-card" id="{{post.ID}}-trigger">
+				<div class="col-md-12 col-lg-5 d-flex align-items-center"><a href="#"><img class="img-fluid" src="{{post.img_src}}"></a>
+				</div>
+				<div class="col">
+					<h3 class="name project-card-title">{{post.name}}</h3>
+					<p class="description project-card-brief-description">{{post.description | truncate: 250}}</p>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
 
 
 </div>

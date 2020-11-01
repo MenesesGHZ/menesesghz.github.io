@@ -1,17 +1,37 @@
-<header style="height: 500px;background: transparent;">
-    <div id="particles-js" style="background-color: #91e5ff;position: absolute;width: 100%;height: 100%;"></div>
-    <div class="container h-100">
-        <div class="row h-100 align-items-center">
-            <div class="col">				<div class="caption v-middle text-center">
-                <h1 class="cd-headline clip">
-                    <span class="blc">I'm | </span>
-                    <span class="cd-words-wrapper">
-                      <b class="is-visible">MenesesGHZ.</b>
-                      <b>Developer.</b>
-                      <b>Creative.</b>
-                    </span>
-                  </h1>
-            </div></div>
-        </div>
-    </div>
+<header style="height: 500px;background: transparent; position:relative">
+	<nav class="navbar navbar-expand-lg navbar-light" style="position:absolute;z-index:100;width:100%">
+		<a class="navbar-brand" href="/">
+			<img src="assets/img/logo2.png" alt="logo" width="60px">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">	
+			<ul class="navbar-nav">
+				{% for item in site.data.navigation %}
+				<li class="nav-item {% if page.url == item.link %}active{% endif %}">
+					<a href="{{ item.link }}" class="nav-link" style="font-size:13pt">
+						{{ item.name }}
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</nav>
+
+	<div id="particles-js" style="background-color: #59d0ff;position: absolute;width: 100%;height: 100%;"></div>
+	<div class="container h-100">
+		<div class="row h-100 align-items-center">
+			<div class="col">				<div class="caption v-middle text-center">
+					<h1 class="cd-headline clip">
+						<span class="blc">I'm | </span>
+						<span class="cd-words-wrapper">
+							<b class="is-visible">MenesesGHZ.</b>
+							<b>Developer.</b>
+							<b>Creative.</b>
+						</span>
+					</h1>
+				</div></div>
+		</div>
+	</div>
 </header>
