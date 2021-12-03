@@ -1,7 +1,7 @@
 window.addEventListener("load",()=>{
     const projects_el = document.getElementById("projects-container");
     
-    const projects_ids = ["snake3d","mnist","knn","k-means","polyregression","safe-alert","lstm"];
+    const projects_ids = ["snake3d","mnist","knn","k-means","polyregression","glitch","gorip"];
    
     for(let project_id of projects_ids){
 
